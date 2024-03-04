@@ -1,0 +1,30 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* 圆角半径为 10px */
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.card .left {
+    width: 40%;
+}
+
+.card .center {
+    width: 40%;
+}
+
+.card .right {
+    width: 20%;
+}
+
+.card .left .top,
+.card .left .middle,
+.card .left .bottom {
+    padding: 5px;
+}
