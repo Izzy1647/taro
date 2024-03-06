@@ -2,13 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    border: 1px solid #ccc;
     border-radius: 10px; /* 圆角半径为 10px */
-    border-radius: 5px;
-    padding: 10px;
+    padding: 12px 24px;
     box-sizing: border-box;
-    margin-bottom: 10px;
+    margin: 0 20px 10px 20px;
+    background: rgba(199, 206, 209, 0.2);
 }
 
 .card .left {
@@ -21,10 +19,80 @@
 
 .card .right {
     width: 20%;
+    align-self: flex-start;
+    flex-direction: column;
+    display: flex;
 }
 
 .card .left .top,
 .card .left .middle,
 .card .left .bottom {
     padding: 5px;
+    color: rgba(255, 255, 255, 1);
 }
+
+.card .left .top{
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 8px;
+}
+
+.card .left .middle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.card .left .bottom {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 10px;
+    padding: 3px 6px;
+    background: rgba(199, 206, 209, 0.2);
+    border-radius: 2px;
+    margin-left: 5px;
+}
+
+.capacity-name, .position-name{
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 9px;
+    color: rgba(199, 206, 209, 0.6);
+}
+
+.capacity-content {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: rgba(107, 228, 128, 1);
+    margin: 2px 0 6px 0;
+}
+
+.position-content {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 2px;
+}
+
+.speed-name {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 9px;
+    margin-top: 5px;
+    color: rgba(199, 206, 209, 0.6);
+}
+
+.speed-content {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 2px;
+}
+
+.arrow {
+    width: 7px;
+    height: 12px;
+  }
